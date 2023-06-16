@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>CookMate</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="https://storage.googleapis.com/documentation-api/logo-cm.png"
+                    alt="CookMate"></a>
+            <h1><a href="/index.html">CookMate</a></h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="https://mega.nz/file/BH0EkYAQ#9gYMl6FIeFIumH3DxreVnt3vGGIzUu1uCSUq5dR1IBE"
+                        target="_blank">Mobile Apps</a></li>
+                <li><a href="https://github.com/CookMateBangkit" target="_blank">Repository</a></li>
+                <li><a href="/index.html">Documentation</a></li>
+            </ul>
+        </nav>
+        <div id="icon">
+            <a href="#" id="menu"><i data-feather="align-justify"></i></a>
+            <a href="#" id="close"><i data-feather="x-square"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="documentation" id="documentation">
+                <div class="content">
+                    <h1>CookMate-API documentation</h1>
+                    <p>Cookmate-API is an Application Programming Interface (API) that provides services for the
+                        Cookmate
+                        application. the following are the services provided by Cookmate-API:</p>
+                    <ol>
+                        <li>Get All Recipes</li>
+                        <li>Get All Ingredients</li>
+                        <li>Get Detail Recipe</li>
+                        <li>Search Recipe</li>
+                        <li>Search Ingredient</li>
+                        <li>Recommendation Based on Text</li>
+                        <li>Recommendation Based on Image</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="recipes" id="recipes">
+                <div class="content" id="recipes">
+                    <h2><span>GET</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/recipes</h2>
+                    <p>This GET method '/recipes' is used to display all the recipes in our dataset along with their
+                        complete data.</p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/recipes.png" alt="Recipes">
+                </div>
+            </div>
+
+            <div class="ingredients">
+                <div class="content" id="ingredients">
+                    <h2><span>GET</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/ingredients</h2>
+                    <p>This GET '/ingredients' method is used to display all the ingredients in our dataset including
+                        the url of the image.</p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/ingredients.png" alt="Ingredients">
+                </div>
+            </div>
+
+            <div class="recipes-id">
+                <div class="content" id="recipes-id">
+                    <h2><span>GET</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/recipes/recipe-38058</h2>
+                    <p>This GET '/recipes/recipe-38058' method is used to call recipe data based on the recipe id in the
+                        dataset.</p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/recipes-id.png" alt="Recipes-id">
+                </div>
+            </div>
+
+            <div class="recipes-name">
+                <div class="content" id="recipes-name">
+                    <h2><span>GET</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/recipes?name=ayam</h2>
+                    <p>This Get '/recipes?name=ayam' method is used to search for recipes based on query params from the
+                        user, for example as an example = ayam. the results will display all recipe data that has
+                        chicken.</p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/recipes-name.png" alt="Recipes-name">
+                </div>
+            </div>
+
+            <div class="ingredients-name">
+                <div class="content" id="ingredients-name">
+                    <h2><span>GET</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/ingredients?name=ay</h2>
+                    <p>This GET method '/ingredients?name=ay' is used to display data and url of photo ingredients based
+                        on query params.</p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/ingredients-name.png"
+                        alt="Ingredients-name">
+                </div>
+            </div>
+
+            <div class="recommend">
+                <div class="content" id="recommend">
+                    <h2><span>POST</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/recommend</h2>
+                    <p>This POST '/recommend' method is used to send a food ingredient data request with a json body as
+                        shown in the example and will return the recipe results that match the food ingredient request.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/recommend.png" alt="Recommend">
+                </div>
+            </div>
+
+            <div class="predict">
+                <div class="content" id="predict">
+                    <h2><span>POST</span></h2>
+                    <h2>https://cookmate-sm5m2qi7wa-as.a.run.app/predict</h2>
+                    <p>This POST '/predict' method is used to send requests for food ingredient data with body images,
+                        as exemplified. the user sends an image then processed through image classification then the
+                        results will be equated with the food ingredients in the dataset if they match will display all
+                        the recipe data.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="https://storage.googleapis.com/documentation-api/predict.png" alt="Predict">
+                </div>
+            </div>
+
+        </div>
+        <div class="kso">
+            <h1>p</h1>
+        </div>
+        <aside>
+            <div class="content">
+                <h1><a href="/index.html">COOKMATE-API DOCUMENTATION</a></h1>
+                <ul>
+                    <li><span style="color: green;">GET</span><a href="#recipes">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/recipes</a></li>
+                    <li><span style="color: green;">GET</span><a href="#ingredients">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/ingredients</a></li>
+                    <li><span style="color: green;">GET</span><a href="#recipes-id">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/recipes/recipe-38058</a>
+                    </li>
+                    <li><span style="color: green;">GET</span><a href="#recipes-name">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/recipes?name=ayam</a></li>
+                    <li><span style="color: green;">GET</span><a href="#ingredients-name">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/ingredients?name=ay</a>
+                    </li>
+                    <li><span style="color: #F8C630;">POST</span><a href="#recommend">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/recommend</a></li>
+                    <li><span style="color: #F8C630;">POST</span><a href="#predict">
+                            https://cookmate-sm5m2qi7wa-as.a.run.app/predict</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>CookMate &#169; 2023</p>
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

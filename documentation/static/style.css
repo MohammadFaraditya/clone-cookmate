@@ -1,0 +1,525 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: white;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+/* Start CSS logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.logo h1 a {
+  padding-left: 15px;
+  font-size: 2rem;
+  color: #ff6e2f;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  order: 3;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff6e2f;
+}
+
+nav ul li a:hover {
+  border-radius: 2px;
+  padding: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.main-content {
+  order: 2;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.documentation {
+  margin-top: 150px;
+  width: 65%;
+  text-align: justify;
+  height: 19rem;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.documentation h1 {
+  padding: 10px;
+}
+
+.documentation p {
+  padding: 10px;
+}
+
+.documentation ol {
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+
+.documentation ol li {
+  padding: 5px;
+}
+
+.recipes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.recipes .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.recipes .content h2 {
+  margin-top: 30px;
+}
+
+.recipes .content p {
+  margin-top: 1rem;
+}
+
+.recipes .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.recipes img {
+  width: 100%;
+}
+
+.recipes span {
+  color: green;
+}
+
+.ingredients {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.ingredients .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.ingredients .content h2 {
+  margin-top: 30px;
+}
+
+.ingredients .content p {
+  margin-top: 1rem;
+}
+
+.ingredients .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.ingredients img {
+  width: 100%;
+}
+
+.ingredients span {
+  color: green;
+}
+
+.recipes-id {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.recipes-id .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.recipes-id .content h2 {
+  margin-top: 30px;
+}
+
+.recipes-id .content p {
+  margin-top: 1rem;
+}
+
+.recipes-id .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.recipes-id img {
+  width: 100%;
+}
+
+.recipes-id span {
+  color: green;
+}
+
+.recipes-name {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.recipes-name .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.recipes-name .content h2 {
+  margin-top: 30px;
+}
+
+.recipes-name .content p {
+  margin-top: 1rem;
+}
+
+.recipes-name .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.recipes-name img {
+  width: 100%;
+}
+
+.recipes-name span {
+  color: green;
+}
+
+.ingredients-name {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.ingredients-name .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.ingredients-name .content h2 {
+  margin-top: 30px;
+}
+
+.ingredients-name .content p {
+  margin-top: 1rem;
+}
+
+.ingredients-name .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.ingredients-name img {
+  width: 100%;
+}
+
+.ingredients-name span {
+  color: green;
+}
+
+.recommend {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.recommend .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.recommend .content h2 {
+  margin-top: 30px;
+}
+
+.recommend .content p {
+  margin-top: 1rem;
+}
+
+.recommend .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.recommend img {
+  width: 100%;
+}
+
+.recommend span {
+  color: #f8c630;
+}
+
+.predict {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.predict .content {
+  text-align: justify;
+  width: 65%;
+  padding: 10px;
+}
+
+.predict .content h2 {
+  margin-top: 30px;
+}
+
+.predict .content p {
+  margin-top: 1rem;
+}
+
+.predict .image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.predict img {
+  width: 100%;
+}
+
+.predict span {
+  color: #f8c630;
+}
+
+aside {
+  float: left;
+  height: 100vh;
+  padding: 0.9rem;
+  order: 1;
+  flex-grow: 1;
+  text-align: center;
+  list-style: none;
+  background-color: whitesmoke;
+  position: fixed;
+  width: 23.2%;
+  left: 0;
+  top: 0;
+}
+
+aside .content {
+  margin-top: 150px;
+}
+
+.kso {
+  float: left;
+  height: 100vh;
+  width: 30%;
+  background-color: whitesmoke;
+}
+
+aside ul li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+aside ul li {
+  margin-top: 10px;
+  list-style: none;
+  text-decoration: none;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.71);
+  border-radius: 5px;
+}
+
+aside ul li span {
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+aside h1 a {
+  font-size: 0.8rem;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #ff6e2f;
+  text-align: center;
+  font-weight: bold;
+}
+
+#icon {
+  display: none;
+  z-index: 1000;
+}
+
+#icon a {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    font-size: 80%;
+    margin-top: 50px;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .kso {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 130px;
+  }
+
+  header nav {
+    margin-top: -5px;
+    font-size: 90%;
+  }
+
+  .logo img {
+    width: 50px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #menu {
+    display: block;
+    z-index: 10;
+    color: black;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  nav {
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    background-color: #e3a857;
+    right: -100%;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: -50px;
+  }
+
+  nav ul li {
+    padding-top: 15px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  #icon {
+    display: block;
+  }
+
+  #close {
+    display: none;
+  }
+
+  .main-content {
+    font-size: 65%;
+  }
+}
